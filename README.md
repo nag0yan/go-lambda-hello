@@ -18,7 +18,12 @@ zip helloFunction.zip bootstrap
 
 ### create lambda function
 ```Shell
-aws lambda create-function --function-name helloFunction --runtime provided.al2023 --handler bootstrap --architectures arm64 --zip-file fileb://helloFunction.zip --role arn:aws:iam::755009017669:role/sample-role
+aws lambda create-function \
+--function-name helloFunction \
+--runtime provided.al2023 \
+--handler bootstrap --architectures arm64 \
+--zip-file fileb://helloFunction.zip \
+--role arn:aws:iam::755009017669:role/sample-role
 ```
 
 ### update lambda function code
